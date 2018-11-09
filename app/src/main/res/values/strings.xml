@@ -3,4 +3,6 @@
     <string name="hello_sir_maddam">Hello Sir/Maddam</string>
     <string name="you_have_misgendered_me">You have misgendered me</string>
     <string name="hello">Hello!</string>
+    <string name="enter_pronoun">Enter Pronoun</string>
+    <string name="confirm">Confirm</string>
 </resources>
