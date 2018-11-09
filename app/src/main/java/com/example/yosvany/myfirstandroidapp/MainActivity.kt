@@ -21,7 +21,15 @@ class MainActivity : AppCompatActivity() {
 
     fun toastMe(view: View) {
         // val myToast = Toast.makeText(this, message, duration);
-        val myToast = Toast.makeText(this, "Hello Toast!", Toast.LENGTH_SHORT)
+        val extras: Bundle? = intent.extras
+        val pronoun: String
+        val myToast: Toast
+        if (extras != null) {
+            pronoun = extras.get("pronoun") as String
+            myToast = Toast.makeText(this, "Hello " + pronoun, Toast.LENGTH_SHORT)
+        } else {
+            myToast = Toast.makeText(this, "Hello Toast!", Toast.LENGTH_SHORT)
+        }
         myToast.show()
     }
 
